@@ -12,6 +12,11 @@ public class C01_IfStatements {
             SADECE if parantezindeki boolean sarta odaklanir
             boolean sart ==> true ise if body'si calisir
             boolean sart ==> false ise if body'si calismaz
+
+            birden fazla bagimsiz if cumlesi kullanildiginda
+            girilen degere bagli olarak
+            tum if body'leri devreye girebilecegi gibi
+            hicbir if body'si devreye girmeyebilir de
          */
 
         // kullanicidan 2 tamsayi alin
