@@ -20,7 +20,49 @@ public class C02_NestedIfElseIndirimliUrunSorusu {
         System.out.println("Musteri kartiniz var mi ?  E : evet , H : Hayir");
         char kartVarMi = scanner.next().toUpperCase().charAt(0);
 
-        double indirimsizToplamSatisFiyati = urunAdedi*indirimsizFiyat;
+        int indirimOrani = 0;
+
+        /*
+            if else ile soru cozerken
+            degisken sayisi 1'den fazla ise ic ice if else cumleleri kullanabiliriz
+
+            Once degiskenlerden birini
+            asil degisken secip
+            yapiyi ona gore kuralim
+
+            bu class'da musteri karti asil degisken olsun
+            kart bilgisine gore 3 ihtimali yazdiktan sonra
+            her ihtimalin icine bu defa urun miktarina gore if else yazalim
+
+         */
+
+        if (kartVarMi == 'E'){
+            // buraya gelen musterinin karti var
+            if (urunAdedi>10){
+                indirimOrani = 20;
+            } else if (urunAdedi > 0){
+                indirimOrani = 15;
+            }else {
+                System.out.println("urun miktari hatali");
+            }
+
+        } else if (kartVarMi == 'H') {
+            // buraya gelen musterinin karti yok
+            if (urunAdedi>10){
+                indirimOrani = 15;
+            } else if (urunAdedi > 0){
+                indirimOrani = 10;
+            }else {
+                System.out.println("urun miktari hatali");
+            }
+        }else {
+            System.out.println("Kart bilgisi hatali");
+        }
+
+        if (indirimOrani>0){
+            System.out.println(indirimOrani + " indirimli toplam fiyat : " +
+                                indirimsizFiyat*urunAdedi*(100-indirimOrani) /100);
+        }
 
     }
 }
