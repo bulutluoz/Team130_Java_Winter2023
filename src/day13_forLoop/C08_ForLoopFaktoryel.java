@@ -16,12 +16,18 @@ public class C08_ForLoopFaktoryel {
         int sayi = scanner.nextInt();
 
         long faktoryel = 1 ;
-
+        System.out.print(sayi + "! = "); // 6! =
         for (int i = sayi; i >=1 ; i--) {
 
             faktoryel *= i;
-        }
 
+            if (i != 1){
+                System.out.print(i + " * ");
+            }else {
+                System.out.print(i +" = ");
+            }
+        }
+        System.out.print(faktoryel);
 
     }
 }
