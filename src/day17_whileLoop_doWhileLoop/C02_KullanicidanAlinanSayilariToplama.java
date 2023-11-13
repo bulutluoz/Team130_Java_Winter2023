@@ -22,9 +22,8 @@ public class C02_KullanicidanAlinanSayilariToplama {
             System.out.println("Lutfen toplanmak uzere sayi giriniz");
             sayi = scanner.nextDouble();
 
-            sayac++;
-
             toplam += sayi;
+            sayac++;
         }
 
         System.out.println("Bu kadar sayi yeter, " + sayac + " adet sayi girdiniz ve toplami "+toplam);
