@@ -22,7 +22,8 @@ public class C06_MethodIleSifreKontrolu {
         Scanner scanner = new Scanner(System.in);
         String sifre = "";
 
-        while (true){
+        while (true){ // sonsuz loop, yani while loop sifre method'dan true donderene kadar
+                      // surekli calisacak
             System.out.println("Lutfen sifrenizi giriniz");
             sifre = scanner.nextLine();
 
