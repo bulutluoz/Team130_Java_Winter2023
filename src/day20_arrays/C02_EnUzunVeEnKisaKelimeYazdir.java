@@ -36,5 +36,4 @@ public class C02_EnUzunVeEnKisaKelimeYazdir {
     }
 
 
-
 }
