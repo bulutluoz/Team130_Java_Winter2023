@@ -62,7 +62,20 @@ public class C02_Remove {
 
         List<String> silinenharfler = new ArrayList<>();
 
-        System.out.println(silinenharfler.add(harfListesi.remove(1)));
+        System.out.println(silinenharfler.add(harfListesi.remove(1))); // true
+
+        // 1- silinen harflere yeni bir element ekledi ve true dondurdu
+        // 2- harfListesi.remove(1) harf listesinden 1.index'deki b'yi sildi ve bize getirdi
+        // 3- getirdigi b elementi silinen harflere eklendi
+
+        System.out.println(silinenharfler); // [b]
+        System.out.println(harfListesi); // [J, a]
+
+
+        String silinenharf = harfListesi.remove(0);
+        silinenharfler.add(silinenharf);
+
+
 
     }
 }
