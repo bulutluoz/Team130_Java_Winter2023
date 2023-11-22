@@ -31,9 +31,10 @@ public class C07_OrtalamaustundekiOgrenciler {
 
                 isimlerListesi.add(girilenisim);
 
+
                 System.out.println("Lutfen ogrencinin notunu giriniz");
                 girilenNot = scanner.nextDouble();
-
+                scanner.nextLine();
                 notToplami += girilenNot;
                 notlarListesi.add(girilenNot);
             }
@@ -46,5 +47,20 @@ public class C07_OrtalamaustundekiOgrenciler {
         // notlarListesindeki notlari gozden gecirip
         // ortalamanin ustunde olanlarin
         // once ismini, yanina notunu yazdirin
+
+        System.out.println("Ortalama not : " + ortalama);
+        System.out.println("Ortalamnin ustunde not alan ogrenciler");
+
+        for (int i = 0; i < isimlerListesi.size() ; i++) {
+
+            if (notlarListesi.get(i) >= ortalama){
+
+                System.out.println(
+                       isimlerListesi.get(i)
+                       + " " +
+                       notlarListesi.get(i)
+                );
+            }
+        }
     }
 }
