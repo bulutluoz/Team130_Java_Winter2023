@@ -36,5 +36,7 @@ public class C07_ArrayDuzenleme {
         }
 
         System.out.println(yeniList); // [Ka, dat, As, kup, ido, bri]
+
+
     }
 }
