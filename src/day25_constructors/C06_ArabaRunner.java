@@ -30,6 +30,9 @@ public class C06_ArabaRunner {
 
         C02_Araba araba2 = new C02_Araba();
 
+        araba2.motor();
+        araba2.guvenlik();
+
         araba2.marka ="Opel";
         araba2.model = "Corsa";
         araba2.yil = 2000;
