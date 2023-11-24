@@ -24,6 +24,23 @@ public class C01_Car {
     C01_Car(){
 
     }
+
+    C01_Car(String mrk,String rnk, int yl ){
+        marka = mrk;
+        renk = rnk;
+        yil = yl;
+    }
+
+    C01_Car(String mrk, String mdl, String rnk, int yl, int fyt){
+        marka = mrk;
+        model = mdl;
+        renk = rnk;
+        yil = yl;
+        fiyat =fyt;
+    }
+
+
+
     public String toString() {
         return "Araba Ozellikleri {" +
                 "marka : '" + marka + '\'' +
