@@ -45,6 +45,10 @@ public class C05_Car {
 
              Java bu ihtiyac icin bize this. keyword'unu vermistir
 
+             Bir variable'in onunde this. keyword kullanilirsa
+             Java bu variable'i aramaya
+             icinde oldugu scope'dan degil, class level'dan baslar
+
          */
 
         this.marka = marka;
