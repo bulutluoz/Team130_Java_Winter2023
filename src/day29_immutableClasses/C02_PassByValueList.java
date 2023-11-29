@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class C02_PassByValueList {
-
     public static void main(String[] args) {
 
         List<Integer> sayilar = new ArrayList<>();
