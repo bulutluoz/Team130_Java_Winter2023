@@ -16,21 +16,25 @@ public class C07_LocalTime {
 
 
         LocalTime baslangic = LocalTime.now();
-        long nanoBaslangic= baslangic.getNano();
+        long nanoBaslangic= baslangic.toNanoOfDay();
 
         int toplam = 0 ;
 
-        for (int i = 1; i <=10000000 ; i++) {
+        for (int j = 1; j <10000 ; j++) {
+            toplam = 0;
+            for (int i = 1; i <=1000000 ; i++) {
 
-            toplam += i % 10;
+                toplam += i % 10;
+            }
         }
 
         System.out.println(toplam);
 
         LocalTime bitis = LocalTime.now();
-        long nanoBitis= bitis.getNano();
+        long nanoBitis= bitis.toNanoOfDay();
 
-
+        System.out.println(baslangic);
+        System.out.println(bitis);
         System.out.println("islem suresi = " +(nanoBitis - nanoBaslangic));
 
     }
