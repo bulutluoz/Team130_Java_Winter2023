@@ -35,3 +35,25 @@ public class C06_Runner {
         System.out.println(obj.soyisim); // Celik
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
