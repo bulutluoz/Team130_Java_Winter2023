@@ -1,5 +1,8 @@
 package day35_inheritanceDataTypeKullanimi;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class C07_Runner {
 
     /*
@@ -66,6 +69,28 @@ public class C07_Runner {
         kus1.gaga(); // gagalidir K
         // kus1.pence(); // CTE
 
+        C04_Hayvanlar kus2 = new C05_Kuslar();
+
+        kus2.omur(); // yasar ve olur H
+        kus2.solunum(); // akciger K
+        kus2.cogalma(); // yumurta K
+        // kus2.kanat(); // CTE
+        kus2.hareket(); // hareket ederler H
+        kus2.beslenme(); // beslenirler H
+        // kus2.gaga(); // CTE
+        // kus2.pence(); // CTE
+
+
+        C04_Hayvanlar hayvan1 = new C04_Hayvanlar();
+
+        hayvan1.omur(); // yasar ve olur H
+        hayvan1.solunum(); // nefes alir H
+        hayvan1.cogalma(); // cogalir H
+        // hayvan1.kanat(); // CTE
+        hayvan1.hareket(); // hareket ederler H
+        hayvan1.beslenme(); // beslenirler H
+        // hayvan1.gaga(); // gagalidir K
+        // hayvan1.pence(); // CTE
 
 
 
