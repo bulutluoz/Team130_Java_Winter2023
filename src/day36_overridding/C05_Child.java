@@ -93,7 +93,18 @@ public class C05_Child extends C04_Parent{
         return null;
     }
 
+    @Override
+    public void method11() {
+        super.method11();
+        // overridding yapildiginda
+        // overridden method veya overridding method'dan
+        // SADECE biri calisir
 
+        // EGER ikisinin de calismasini isterseniz
+        // super.methodIsmi yazarak
+        // parent'daki method'un da calismasini SAGLAYABILIRIZ
+
+    }
 
 
 
