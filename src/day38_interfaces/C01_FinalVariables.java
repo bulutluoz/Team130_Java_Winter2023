@@ -1,10 +1,15 @@
 package day38_interfaces;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class C01_FinalVariables {
 
     final static int SAYI = 10;
     // final String STR;
     // Variable 'STR' might not have been initialized
+
+
 
     public static void main(String[] args) {
 
@@ -20,5 +25,9 @@ public class C01_FinalVariables {
         System.out.println(SAYI); // 10
 
         // sayi = 20;
+
+
+
+
     }
 }
