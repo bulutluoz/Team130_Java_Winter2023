@@ -1,6 +1,6 @@
 package day38_interfaces;
 
-public class C01 {
+public class C01_FinalVariables {
 
     final static int SAYI = 10;
     // final String STR;
