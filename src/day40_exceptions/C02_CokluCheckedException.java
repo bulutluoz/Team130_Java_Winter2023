@@ -8,6 +8,23 @@ public class C02_CokluCheckedException {
 
     public static void main(String[] args)   {
 
+        /*
+           kodumuzda birden fazla exception olusma ihtimali varsa
+           tek try, birden fazla catch blogu kullanabiliriz
+           catch bloklari siralanirken, exception turleri dikkate alinmalidir
+
+            -  EGER olusabilecek exception'lar arasinda
+               parent child iliskisi yoksa
+               istedigimiz siralamada yazabiliriz
+
+            -  EGER  olusabilecek exception'lar parent-child iliskisine sahip iseler
+               bu durumda child olani uste,
+               parent olani alta yazmaliyiz
+               aksi takdirde parent ustte olunca
+               tum exception'lari yakalar ve child exception'i yazmak anlamsiz olur
+
+         */
+
         String dosyaYolu = "src/day40_exceptions/yazi.txt";
 
         try {
