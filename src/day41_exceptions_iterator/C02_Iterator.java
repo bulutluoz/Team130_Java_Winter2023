@@ -1,4 +1,4 @@
-package day41_exceptions_collections;
+package day41_exceptions_iterator;
 
 import java.util.ArrayList;
 import java.util.Iterator;

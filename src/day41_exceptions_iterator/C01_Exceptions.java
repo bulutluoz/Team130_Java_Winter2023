@@ -1,6 +1,4 @@
-package day41_exceptions_collections;
-
-import java.io.IOException;
+package day41_exceptions_iterator;
 
 public class C01_Exceptions {
 
