@@ -27,11 +27,11 @@ public class C04_HarfKullanimSayilariCompute {
             harfKullanimMapi.computeIfPresent(each, (k,v)-> v+1); // harf map'de varsa
 
             harfKullanimMapi.computeIfAbsent(each,v->1);
-
         }
 
         System.out.println(harfKullanimMapi); // {a=3, b=3, c=3, d=3, e=2}
     }
+
 
 
 
